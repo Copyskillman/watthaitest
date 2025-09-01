@@ -1,13 +1,13 @@
-/* Container หลัก */
 #temple.templeall {
   background: url("src/bg.jpg") no-repeat center center;
   background-size: cover;
+  background-color: #f0f0f0;
   padding: 30px;
   text-align: center;
   font-family: "Arial", sans-serif;
+  --columns: 3;
 }
 
-/* หัวข้อ */
 #temple h2 {
   font-size: 28px;
   margin-bottom: 5px;
@@ -18,26 +18,33 @@
   margin-bottom: 20px;
 }
 
-/* Carousel */
-.carousel {
-  display: flex;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
   gap: 15px;
-  overflow: hidden;
   justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Item */
+.gallery-grid[data-columns="2"] {
+  max-width: 650px;
+  gap: 20px;
+}
+
 .wat {
-  flex: 0 0 300px;
   text-align: center;
   position: relative;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .imagewatthai2 {
   width: 300px;
   height: 300px;
-  object-fit: cover; /* crop ภาพ */
+  object-fit: cover;
   border-radius: 10px;
+  display: block;
 }
 
 .wat span {
@@ -51,7 +58,6 @@
   text-shadow: 1px 1px 2px black;
 }
 
-/* ปุ่มควบคุม */
 .controls {
   margin-top: 15px;
 }
