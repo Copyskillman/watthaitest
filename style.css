@@ -1,0 +1,71 @@
+/* Container หลัก */
+#temple.templeall {
+  background: url("src/bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* หัวข้อ */
+#temple h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+#temple p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+/* Item */
+.wat {
+  flex: 0 0 300px;
+  text-align: center;
+  position: relative;
+}
+
+.imagewatthai2 {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* crop ภาพ */
+  border-radius: 10px;
+}
+
+.wat span {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* ปุ่มควบคุม */
+.controls {
+  margin-top: 15px;
+}
+
+.controls button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #666;
+}
